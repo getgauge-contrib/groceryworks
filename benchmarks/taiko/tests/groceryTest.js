@@ -13,7 +13,7 @@ describe('test groceryWorks ', () => {
 
     it('should have the right title', async () => {
         const pageTitle = await title();
-        assert.equal('GroceryWorks', 'GroceryWorks');
+        assert.equal(pageTitle, 'GroceryWorks');
     });
 
     it('should add beans to order', async () => {
