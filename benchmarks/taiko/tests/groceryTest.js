@@ -4,7 +4,7 @@ const { openBrowser,closeBrowser, goto, title, click, $ } = require('taiko');
 describe('test groceryWorks ', () => {
     before(async () => {
         await openBrowser();
-        await goto('http://127.0.0.1:8080',{waitForEvents:['loadEventFired']}); 
+        await goto('http://127.0.0.1:8080'); 
     });
 
     after(async () => {
